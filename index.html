@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="coffe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- LOGO -->
+      <a class="logo" href="#">
+        <img src="./image/coffee.webp" alt="logo" />
+      </a>
+      <!-- NAVBAR -->
+      <nav id="navbar" class="navbar-items">
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+      </nav>
+      <!-- ICONS INTERACTIVES  -->
+      <div class="icons">
+        <i class="ti ti-search"></i>
+        <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+        <i id="toggle" class="ti ti-menu-2 btn-menu"></i>
+      </div>
+      <!-- SEARCH FORM -->
+      <div class="search-form">
+        <input type="text" id="search-box" placeholder="search..." />
+        <label for="search-box" class="ti ti-search"></label>
+      </div>
+
+      <!-- CART ITEMS -->
+      <section id="cart-items" class="cart-items-container">
+        <!-- ITEM -->
+        <article class="cart-item">
+          <img src="./image/coffe-mocha.jpg" alt="Mocha" />
+          <div class="content">
+            <h3>cart item #1</h3>
+            <p class="price">$15.99</p>
+          </div>
+          <i class="ti ti-x"></i>
+        </article>
+        <!-- ITEM -->
+        <div class="cart-item">
+          <img src="./image/coffee-irish.webp" alt="Irish" />
+          <div class="content">
+            <h3>cart item #2</h3>
+            <p class="price">$15.99</p>
+          </div>
+          <i class="ti ti-x"></i>
+        </div>
+        <div class="cart-item">
+          <img src="./image/coffe-flat-white.jpg" alt="Flat-White" />
+          <div class="content">
+            <h3>cart item #2</h3>
+            <p class="price">$15.99</p>
+          </div>
+          <i class="ti ti-x"></i>
+        </div>
+        <!-- ITEM BUTTON  -->
+        <button class="btn-check">Checkout now</a>
+      </section>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <article class="hero-info">
+        <header>
+          <h1>COFFEE SHOP</h1>
+        </header>
+        <p>Fresh & Hot Coffee</p>
+        <div style="margin-top: 16px;">
+          <a class="btn btn-buy" href="#menu">Compra ahora</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- TOP CATEGORIES -->
+    <section class="container top-categories">
+      <header>
+        <h2 class="title-section text-center">TOP <span>CATEGORIES</span></h2>
+      </header>
+      <div class="container-top-categories top-categories-grid">
+        <article class="card-category espresso">
+          <h3>espresso</h3>
+        </article>
+        <article class="card-category capuccino">
+          <h3>cappuccino</h3>
+        </article>
+        <article class="card-category americano">
+          <h3>americano</h3>
+        </article>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- SECTION COFFEE  -->
+    <section class="container section-coffee">
+      <header>
+        <h2 class="title-section text-center">COFFEE BUILD YOUR BASE</h2>
+      </header>
+      <div class="section-coffee-grid">
+        <div class="fr"">
+          <article class="fr-data text-center">
+            <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+            <div class="fr-box-text">
+              <h3>Coffee Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, harum.</p>
+            </div>
+          </article>
+          <article class="fr-data text-center">
+            <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+            <div class="fr-box-text">
+              <h3>Coffee Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, harum.</p>
+            </div>
+          </article>
+        </div>
+        <div class="fr fr-image">
+          <img
+           src="./image/coffee-hero-2.png" 
+           alt="hero"
+           >
+        </div>
+        <div class="fr">
+          <article class="fr-data text-center">
+            <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+            <div class="fr-box-text">
+              <h3>Coffee Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, harum.</p>
+            </div>
+          </article>
+          <article class="fr-data text-center">
+            <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+            <div class="fr-box-text">
+              <h3>Coffee Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, harum.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+    <!--  -->
+
+    <!-- MENU -->
+    <main id="menu" class="container container-menu">
+      <header>
+        <h2 class="title-section text-center">OUR <span>MENU</span></h2>
+      </header>
+      <!-- GRID -->
+      <div class="grid-menu">
+        <!-- CARDS -->
+        <article class="card-menu">
+          <img src="/image/coffe-mocha.jpg" alt="Mocha" />
+          <div class="card-info text-center">
+            <h3 class="title">Coffee Mocha</h3>
+            <div class="data">
+              <p class="price">$15.99</p>
+              <button class="btn-add-cart">
+                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card-menu">
+          <img src="/image/coffee-americano.webp" alt="Mocha" />
+          <div class="card-info text-center">
+            <h3 class="title">Coffee Americano</h3>
+            <div class="data">
+              <p class="price">$15.99</p>
+              <button class="btn-add-cart">
+                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card-menu">
+          <img src="/image/coffe-flat-white.jpg" alt="Mocha" />
+          <div class="card-info text-center">
+            <h3 class="title">Coffee Flat White</h3>
+            <div class="data">
+              <p class="price">$15.99</p>
+              <button class="btn-add-cart">
+                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card-menu">
+          <img src="/image/coffee-irish.webp" alt="Mocha" />
+          <div class="card-info text-center">
+            <h3 class="title">Coffee Irish</h3>
+            <div class="data">
+              <p class="price">$15.99</p>
+              <button class="btn-add-cart">
+                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card-menu">
+          <img src="/image/coffee-iced.jpg" alt="Mocha" />
+          <div class="card-info text-center">
+            <h3 class="title">Coffee Iced</h3>
+            <div class="data">
+              <p class="price">$15.99</p>
+              <button class="btn-add-cart">
+                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- SECTION OFF -->
+    <section class="section-off-hero">
+      <div class="section-off-bg">
+        <div class="section-off-info">
+          <div class="text-box">
+            <h2>DISCOVER CAFÉ & AROMA</h2>
+            <p>SALE 25% OFF ON ALL COFFEE</p>
+            <a class="btn-cta" href="#">comprar ahora</a>
+          </div>
+          <div class="box-image">
+            <div class="circle"></div>
+            <img src="./image/off-image-2.png" alt="photo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- PRODUCTS -->
+    <section id="products" class="container container-products">
+      <!-- HEADER PRODUCTS -->
+      <header>
+        <h2 class="title-section text-center">PRODUCTS</h2>
+      </header>
+      <!-- GRID PRODUCTS -->
+      <div class="grid-products">
+        <!-- PRODUCT CARD -->
+        <article class="product-card">
+          <img src="./image/product-1.webp" alt="Photo" />
+          <h3 class="product-title">Coffee Break</h3>
+          <p class="price">$230</p>
+          <div class="buttons">
+            <button class="btn btn-buy">Buy</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="./image/product-1.webp" alt="Photo" />
+          <h3 class="product-title">Coffee Break</h3>
+          <p class="price">$230</p>
+          <div class="buttons">
+            <button class="btn btn-buy">Buy</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="./image/product-1.webp" alt="Photo" />
+          <h3 class="product-title">Coffee Break</h3>
+          <p class="price">$230</p>
+          <div class="buttons">
+            <button class="btn btn-buy">Buy</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="./image/product-1.webp" alt="Photo" />
+          <h3 class="product-title">Coffee Break</h3>
+          <p class="price">$230</p>
+          <div class="buttons">
+            <button class="btn btn-buy">Buy</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="./image/product-1.webp" alt="Photo" />
+          <h3 class="product-title">Coffee Break</h3>
+          <p class="price">$230</p>
+          <div class="buttons">
+            <button class="btn btn-buy">Buy</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION REVIEW -->
+    <section id="review" class="container section-review">
+      <!-- CONTAINER REVIEW -->
+      <div class="container-review">
+        <header>
+          <h2 class="title-section text-center">What People Say About Us</h2>
+        </header>
+        <div class="swiper testimonials-slider js-testimonials-slider">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide testimonials-item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, corrupti et vero repellat voluptatum hic officia iste. Quia, tempore qui!</p>
+              <div class="text-box">
+                <h3 class="name">John doe</h3>
+              </div>
+            </article>
+            <article class="swiper-slide testimonials-item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, corrupti et vero repellat voluptatum hic officia iste. Quia, tempore qui!</p>
+              <div class="text-box">
+                <h3 class="name">Mark Ruffalo</h3>
+              </div>
+            </article>
+            <article class="swiper-slide testimonials-item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, corrupti et vero repellat voluptatum hic officia iste. Quia, tempore qui!</p>
+              <div class="text-box">
+                <h3 class="name">Lionel Messi</h3>
+              </div>
+            </article>
+            <article class="swiper-slide testimonials-item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, corrupti et vero repellat voluptatum hic officia iste. Quia, tempore qui!</p>
+              <div class="text-box">
+                <h3 class="name">Di Maria</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div style="position: relative; margin-top: 32px;" class="swiper-pagination js-testimonials-pagination"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-info">
+        <h2>Coffee</h2>
+        <nav class="footer-navbar">
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+      </nav>
+      <div class="social-networks">
+        <div class="box-icon">
+          <img class="icon" src="./image/facebook.svg" alt="">
+        </div>
+        <div class="box-icon">
+          <img class="icon" src="./image/twitter.svg" alt="">
+        </div>
+        <div class="box-icon">
+          <img class="icon" src="./image/youtube.svg" alt="">
+        </div>
+        <div class="box-icon">
+          <img class="icon" src="./image/instagram.svg" alt="">
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!--  -->
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.js-testimonials-slider', {
+      loop: true,
+      grabCursor:true,
+      spaceBetween:30,
+      pagination: {
+        el: '.js-testimonials-pagination',
+        clickable:true
+      },
+      //Breakpoints
+      breakpoints:{
+        768:{
+          slidesPerView:2
+        }
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      });
+    </script>
+  </body>
+</html>
