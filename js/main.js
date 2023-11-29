@@ -1,3 +1,4 @@
+
 const navbar = document.getElementById('navbar')
 const toggle = document.getElementById('toggle')
 const toggleCart = document.getElementById('toggle-cart')

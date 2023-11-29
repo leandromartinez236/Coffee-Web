@@ -8,18 +8,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
-    />
     <title>Document</title>
   </head>
   <body>
+    
     <!-- HEADER -->
     <header class="header">
       <!-- LOGO -->
       <a class="logo" href="#">
-        <img src="./image/coffee.webp" alt="logo" />
+        <img width="40" height="40" src="./image/webp-y-comprimida/logo.webp" alt="logo" />
       </a>
       <!-- NAVBAR -->
       <nav id="navbar" class="navbar-items">
@@ -30,46 +27,36 @@
       </nav>
       <!-- ICONS INTERACTIVES  -->
       <div class="icons">
-        <i class="ti ti-search"></i>
-        <i id="toggle-cart" class="ti ti-shopping-cart"></i>
-        <i id="toggle" class="ti ti-menu-2 btn-menu"></i>
+        <img width="22" height="22" id="toggle-cart" src="./image/cart.svg" alt="cart">
+        <img width="22" height="22" id="toggle" src="./image/btn-menu.svg" alt="menu">
       </div>
-      <!-- SEARCH FORM -->
-      <div class="search-form">
-        <input type="text" id="search-box" placeholder="search..." />
-        <label for="search-box" class="ti ti-search"></label>
-      </div>
-
       <!-- CART ITEMS -->
       <section id="cart-items" class="cart-items-container">
         <!-- ITEM -->
         <article class="cart-item">
-          <img src="./image/coffe-mocha.jpg" alt="Mocha" />
+          <img width="80" height="80" loading="lazy" src="./image/webp-y-comprimida/coffe-mocha-webp.webp" alt="Mocha" />
           <div class="content">
-            <h3>cart item #1</h3>
-            <p class="price">$15.99</p>
+            <h3>Coffee Mocha</h3>
+            <p class="price">$3.94</p>
           </div>
-          <i class="ti ti-x"></i>
         </article>
         <!-- ITEM -->
         <div class="cart-item">
-          <img src="./image/coffee-irish.webp" alt="Irish" />
+          <img width="80" height="80" loading="lazy" src="./image/coffee-irish.webp" alt="Irish" />
           <div class="content">
-            <h3>cart item #2</h3>
-            <p class="price">$15.99</p>
+            <h3>Coffee irish</h3>
+            <p class="price">$3.14</p>
           </div>
-          <i class="ti ti-x"></i>
         </div>
         <div class="cart-item">
-          <img src="./image/coffe-flat-white.jpg" alt="Flat-White" />
+          <img  width="80" height="80" loading="lazy" src="./image/webp-y-comprimida/coffe-flat-white.webp" alt="Flat-White" />
           <div class="content">
-            <h3>cart item #2</h3>
-            <p class="price">$15.99</p>
+            <h3>Coffee White</h3>
+            <p class="price">$2.26</p>
           </div>
-          <i class="ti ti-x"></i>
         </div>
         <!-- ITEM BUTTON  -->
-        <button class="btn-check">Checkout now</a>
+        <button role="button" class="btn-check">Checkout now</a>
       </section>
     </header>
 
@@ -80,9 +67,7 @@
           <h1>COFFEE SHOP</h1>
         </header>
         <p>Fresh & Hot Coffee</p>
-        <div style="margin-top: 16px;">
-          <a class="btn btn-buy" href="#menu">Compra ahora</a>
-        </div>
+        <a class="btn-cta" href="#menu">compra ahora</a>
       </article>
     </section>
 
@@ -127,12 +112,13 @@
             </div>
           </article>
         </div>
-        <div class="fr fr-image">
-          <img
-           src="./image/coffee-hero-2.png" 
-           alt="hero"
-           >
-        </div>
+        <img 
+          loading="lazy"
+          width="240"
+          height="389"
+          src="./image/webp-y-comprimida/coffee-hero-2-webp-comprimido.webp" 
+          alt="hero"
+        >
         <div class="fr">
           <article class="fr-data text-center">
             <i id="toggle-cart" class="ti ti-shopping-cart"></i>
@@ -163,61 +149,61 @@
       <div class="grid-menu">
         <!-- CARDS -->
         <article class="card-menu">
-          <img src="/image/coffe-mocha.jpg" alt="Mocha" />
+          <img width="200" height="200" loading="lazy" src="/image/webp-y-comprimida/coffe-mocha-webp.webp" alt="coffe mocha" />
           <div class="card-info text-center">
             <h3 class="title">Coffee Mocha</h3>
             <div class="data">
-              <p class="price">$15.99</p>
-              <button class="btn-add-cart">
-                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              <p class="price">$3.94</p>
+              <button role="button" class="btn-add-cart">
+                Agregar
               </button>
             </div>
           </div>
         </article>
         <article class="card-menu">
-          <img src="/image/coffee-americano.webp" alt="Mocha" />
+          <img width="200" height="200" loading="lazy" src="/image/coffee-americano.webp" alt="coffee americano" />
           <div class="card-info text-center">
             <h3 class="title">Coffee Americano</h3>
             <div class="data">
-              <p class="price">$15.99</p>
-              <button class="btn-add-cart">
-                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              <p class="price">$2.62</p>
+              <button role="button" class="btn-add-cart">
+                Agregar
               </button>
             </div>
           </div>
         </article>
         <article class="card-menu">
-          <img src="/image/coffe-flat-white.jpg" alt="Mocha" />
+          <img width="200" height="200" loading="lazy" src="/image/webp-y-comprimida/coffe-flat-white.webp" alt="coffee white" />
           <div class="card-info text-center">
-            <h3 class="title">Coffee Flat White</h3>
+            <h3 class="title">Coffee White</h3>
             <div class="data">
-              <p class="price">$15.99</p>
-              <button class="btn-add-cart">
-                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              <p class="price">$2.26</p>
+              <button role="button" class="btn-add-cart">
+                Agregar
               </button>
             </div>
           </div>
         </article>
         <article class="card-menu">
-          <img src="/image/coffee-irish.webp" alt="Mocha" />
+          <img width="200" height="200" loading="lazy" src="/image/coffee-irish.webp" alt="coffee irish" />
           <div class="card-info text-center">
             <h3 class="title">Coffee Irish</h3>
             <div class="data">
-              <p class="price">$15.99</p>
-              <button class="btn-add-cart">
-                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              <p class="price">$3.14</p>
+              <button role="button" class="btn-add-cart">
+                Agregar
               </button>
             </div>
           </div>
         </article>
         <article class="card-menu">
-          <img src="/image/coffee-iced.jpg" alt="Mocha" />
+          <img width="200" height="200" loading="lazy" src="/image/webp-y-comprimida/coffee-iced-webp.webp" alt="coffee iced" />
           <div class="card-info text-center">
             <h3 class="title">Coffee Iced</h3>
             <div class="data">
-              <p class="price">$15.99</p>
-              <button class="btn-add-cart">
-                <i id="toggle-cart" class="ti ti-shopping-cart"></i>
+              <p class="price">$2.99</p>
+              <button role="button" class="btn-add-cart">
+                Agregar
               </button>
             </div>
           </div>
@@ -236,7 +222,7 @@
           </div>
           <div class="box-image">
             <div class="circle"></div>
-            <img src="./image/off-image-2.png" alt="photo">
+            <img width="300" height="auto" loading="lazy" src="./image/webp-y-comprimida/off-image-2.webp" alt="photo">
           </div>
         </div>
       </div>
@@ -253,43 +239,43 @@
       <div class="grid-products">
         <!-- PRODUCT CARD -->
         <article class="product-card">
-          <img src="./image/product-1.webp" alt="Photo" />
+          <img width="175" height="auto" loading="lazy" src="./image/product-1.webp" alt="Photo" />
           <h3 class="product-title">Coffee Break</h3>
-          <p class="price">$230</p>
+          <p class="price">$16</p>
           <div class="buttons">
-            <button class="btn btn-buy">Buy</button>
+            <button role="button" class="btn btn-buy">Buy</button>
           </div>
         </article>
         <article class="product-card">
-          <img src="./image/product-1.webp" alt="Photo" />
+          <img width="175" height="auto" loading="lazy" src="./image/product-1.webp" alt="Photo" />
           <h3 class="product-title">Coffee Break</h3>
-          <p class="price">$230</p>
+          <p class="price">$16</p>
           <div class="buttons">
-            <button class="btn btn-buy">Buy</button>
+            <button role="button" class="btn btn-buy">Buy</button>
           </div>
         </article>
         <article class="product-card">
-          <img src="./image/product-1.webp" alt="Photo" />
+          <img width="175" height="auto" loading="lazy" src="./image/product-1.webp" alt="Photo" />
           <h3 class="product-title">Coffee Break</h3>
-          <p class="price">$230</p>
+          <p class="price">$16</p>
           <div class="buttons">
-            <button class="btn btn-buy">Buy</button>
+            <button role="button" class="btn btn-buy">Buy</button>
           </div>
         </article>
         <article class="product-card">
-          <img src="./image/product-1.webp" alt="Photo" />
+          <img width="175" height="auto" loading="lazy" src="./image/product-1.webp" alt="Photo" />
           <h3 class="product-title">Coffee Break</h3>
-          <p class="price">$230</p>
+          <p class="price">$16</p>
           <div class="buttons">
-            <button class="btn btn-buy">Buy</button>
+            <button role="button" class="btn btn-buy">Buy</button>
           </div>
         </article>
         <article class="product-card">
-          <img src="./image/product-1.webp" alt="Photo" />
+          <img width="175" height="auto" loading="lazy" src="./image/product-1.webp" alt="Photo" />
           <h3 class="product-title">Coffee Break</h3>
-          <p class="price">$230</p>
+          <p class="price">$16</p>
           <div class="buttons">
-            <button class="btn btn-buy">Buy</button>
+            <button role="button" class="btn btn-buy">Buy</button>
           </div>
         </article>
       </div>
@@ -343,27 +329,34 @@
         <a href="#menu">Menu</a>
         <a href="#products">Products</a>
         <a href="#review">Review</a>
-      </nav>
+        </nav>
+      </div>
       <div class="social-networks">
         <div class="box-icon">
-          <img class="icon" src="./image/facebook.svg" alt="">
+          <img width="44" height="44" loading="lazy" class="icon" src="./image/facebook.svg" alt="">
         </div>
         <div class="box-icon">
-          <img class="icon" src="./image/twitter.svg" alt="">
+          <img width="44" height="44" loading="lazy" class="icon" src="./image/twitter.svg" alt="">
         </div>
         <div class="box-icon">
-          <img class="icon" src="./image/youtube.svg" alt="">
+          <img width="44" height="44" loading="lazy" class="icon" src="./image/youtube.svg" alt="">
         </div>
         <div class="box-icon">
-          <img class="icon" src="./image/instagram.svg" alt="">
+          <img width="44" height="44" loading="lazy" class="icon" src="./image/instagram.svg" alt="">
         </div>
       </div>
       </div>
     </footer>
     <!--  -->
+    <!-- 
+      Agregar la palabra clave "async" a la etiqueta "script" 
+      le indica al navegador que no bloquee la construcción del DOM 
+      mientras espera que la secuencia de comandos esté disponible,
+      lo que puede mejorar significativamente el rendimiento.
+    -->
     <!-- SCRIPTS -->
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper('.js-testimonials-slider', {
       loop: true,
@@ -373,18 +366,15 @@
         el: '.js-testimonials-pagination',
         clickable:true
       },
-      //Breakpoints
       breakpoints:{
         768:{
           slidesPerView:2
         }
       },
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
